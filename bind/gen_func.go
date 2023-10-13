@@ -32,10 +32,10 @@ import (
 // The patch-leaks.go generated file will perform this patch for
 // functions whose names are embedded in it by genPatchLeakFuncName.
 //
-//  .....
-//  retval = cstrings_StringValue(s, n);
-//  py_retval = Py_BuildValue((char *) "s", retval);
-//  .....
+//	.....
+//	retval = cstrings_StringValue(s, n);
+//	py_retval = Py_BuildValue((char *) "s", retval);
+//	.....
 //
 // This patching is required for top level functions that return
 // strings directly and also for getters that return strings that
